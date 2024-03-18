@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: Prudhvi_EU_SuperIPaasProject
+  gitServerName: prudhvi_Github
+  gitUrl: https://github.com/prudhvi-penmetsa-saggs/Prudhvi_EU_SuperIPaasProject
+  gitUsername: prudhvi-penmetsa-saggs
+  gitBranch: master
