@@ -12,3 +12,14 @@ packages:
   gitUrl: https://github.com/prudhvi-penmetsa-saggs
   gitUsername: prudhvi-penmetsa-saggs
   gitBranch: master
+services:
+- serviceName: project.prudhvi_eu_superipaas.integrations:OnPrem_GetCustomer
+  packages:
+  - name: Prudhvi_EU_SuperIPaasProject
+    version: "1.0"
+  - name: MFTDemo
+    version: "1.0"
+- serviceName: MFTDemo.jdbc.services:getCustomer
+  packages:
+  - name: MFTDemo
+    version: "1.0"
