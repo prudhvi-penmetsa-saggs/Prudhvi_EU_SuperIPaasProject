@@ -45,14 +45,13 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">demouser</value>
-    <value name="createdDate">1711484839196</value>
-    <value name="lastModifiedDate">1711484839196</value>
+    <value name="lastModifiedBy">demouser</value>
+    <value name="lastModifiedDate">1711484848162</value>
     <record name="edgeServer" javaclass="com.wm.util.Values">
-      <value name="id">cfafebd5d07541738be9c556911b6bcf</value>
+      <value name="id">ea6b615f96a14374983eea9401b64efa</value>
       <value name="group">default</value>
-      <value name="name">Cloud Runtime</value>
-      <value name="executionPlaneType">cloud</value>
+      <value name="name">Prudhvi_Jdbc</value>
+      <value name="executionPlaneType">onprem</value>
     </record>
     <value name="displayName">MYSql_GetCustomer</value>
     <value name="description"></value>

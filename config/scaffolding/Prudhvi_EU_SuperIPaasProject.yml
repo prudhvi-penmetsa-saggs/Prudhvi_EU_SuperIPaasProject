@@ -32,6 +32,18 @@ services:
     version: "1.0"
   - name: MFTDemo
     version: "1.0"
+- serviceName: project.prudhvi_eu_superipaas.integrations:MYSql_GetCustomer
+  packages:
+  - name: Prudhvi_EU_SuperIPaasProject
+    version: "1.0"
+  - name: MFTDemo
+    version: "1.0"
+- serviceName: project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:MYSQL_getOrder
+  packages:
+  - name: Prudhvi_EU_SuperIPaasProject
+    version: "1.0"
+  - name: MFTDemo
+    version: "1.0"
 configurationVariables:
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.portNumber
   : "3306"
