@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="1.0" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:MYSQL_getOrder" VALIDATE-IN="" VALIDATE-OUT="">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+</SEQUENCE>
+</FLOW>
