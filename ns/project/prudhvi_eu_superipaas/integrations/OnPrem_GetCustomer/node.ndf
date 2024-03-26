@@ -318,11 +318,11 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">demouser</value>
-    <value name="lastModifiedDate">1711398395589</value>
+    <value name="lastModifiedDate">1711471977279</value>
     <record name="edgeServer" javaclass="com.wm.util.Values">
-      <value name="id">03cc489aff4e4450a9ad5d1bc362bca4</value>
+      <value name="id">ea6b615f96a14374983eea9401b64efa</value>
       <value name="group">default</value>
-      <value name="name">PRUDHVI_Docker</value>
+      <value name="name">Prudhvi_Jdbc</value>
       <value name="executionPlaneType">onprem</value>
     </record>
     <value name="displayName">OnPrem_GetCustomer</value>
@@ -345,6 +345,7 @@
         <null name="mapSet"/>
         <number name="ui_step_index" type="Long">1</number>
         <number name="nodeIndex" type="Long">0</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
       </record>
     </record>
   </record>
