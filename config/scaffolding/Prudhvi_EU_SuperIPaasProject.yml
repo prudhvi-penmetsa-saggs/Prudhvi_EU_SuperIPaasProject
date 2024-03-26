@@ -44,49 +44,101 @@ services:
     version: "1.0"
   - name: MFTDemo
     version: "1.0"
+- serviceName: project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:MSSQL_Tarak
+  packages:
+  - name: Prudhvi_EU_SuperIPaasProject
+    version: "1.0"
+  - name: MFTDemo
+    version: "1.0"
 configurationVariables:
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.portNumber
   : "3306"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.user
   : wmuser
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.heartBeatInterval
   : "0"
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.trustStore
-  : ""
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.minimumPoolSize
-  : "0"
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.startupBackoffSecs
-  : "10"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.password
   : "{AES}/v7dcN/RisYl6yDyOmsq7g=="
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.keyStore
   : ""
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.poolIncrementSize
   : "1"
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.serverName
-  : tmsdatahub.softwareag-gs.com
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.dbType
   : MySQL
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionEnabled
-  : "false"
-  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.transactionType
-  : NO_TRANSACTION
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.serverName
+  : omstnk.database.windows.net
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.driverType
   : myql
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.databaseName
   : ""
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.networkProtocol
   : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.databaseName
+  : ordermanagement
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.trustStore
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionEnabled
+  : "false"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.keyStore
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.password
+  : "{AES}Uqhv+pIqGq7ZlYFG0jqSWA=="
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.serverName
+  : tmsdatahub.softwareag-gs.com
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionEnabled
+  : "false"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.user
+  : admintnk
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionSettings.trustStore
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MSSQL_Tarak.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.poolable
