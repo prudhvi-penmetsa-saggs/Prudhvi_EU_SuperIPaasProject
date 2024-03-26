@@ -12,6 +12,9 @@ packages:
   gitUrl: https://github.com/prudhvi-penmetsa-saggs
   gitUsername: prudhvi-penmetsa-saggs
   gitBranch: master
+- name: WmJDBCAdapter
+  wpmServer: https://packages.softwareag.com
+  wpmRegistry: softwareag
 services:
 - serviceName: project.prudhvi_eu_superipaas.integrations:OnPrem_GetCustomer
   packages:
@@ -23,3 +26,56 @@ services:
   packages:
   - name: MFTDemo
     version: "1.0"
+- serviceName: project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:MySQL
+  packages:
+  - name: Prudhvi_EU_SuperIPaasProject
+    version: "1.0"
+  - name: MFTDemo
+    version: "1.0"
+configurationVariables:
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.user
+  : wmuser
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.trustStore
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.password
+  : "{AES}/v7dcN/RisYl6yDyOmsq7g=="
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.keyStore
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.serverName
+  : tmsdatahub.softwareag-gs.com
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.dbType
+  : MySQL
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionEnabled
+  : "false"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.driverType
+  : myql
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.databaseName
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Prudhvi_EU_SuperIPaasProject.project.prudhvi_eu_superipaas.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.MySQL.connectionManagerSettings.poolable
+  : "false"
